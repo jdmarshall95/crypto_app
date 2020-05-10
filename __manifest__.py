@@ -5,6 +5,7 @@
     'depends': ['base'],
     'application': 'true',
     'data': [
+        'security/crypto_security.xml',
         'views/crypto_menu.xml',
     ],
 }
