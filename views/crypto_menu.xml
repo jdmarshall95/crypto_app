@@ -7,7 +7,7 @@
   <!-- Action to open the Keypair list -->
   <act_window id="action_crypto_block"
     name="Keypairs"
-    res_model="crypto.blocks"
+    res_model="crypto.block"
     view_mode="tree,form"
     />
   <!-- Menu item to open the Keypair list -->
