@@ -3,4 +3,17 @@
   <!-- Crypto App Menu -->
   <menuitem id="menu_crypto"
             name="Crypto" />
+
+  <!-- Action to open the Keypair list -->
+  <act_window id="action_crypto_block"
+    name="Keypairs"
+    res_model="crypto.blocks"
+    view_mode="tree,form"
+    />
+  <!-- Menu item to open the Keypair list -->
+  <menuitem id="menu_crypto_block"
+    name="Block"
+    action="action_crypto_block"
+    parent="menu_crypto" />
+
 </odoo>
