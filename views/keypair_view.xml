@@ -22,9 +22,7 @@
         </header>
         <sheet>
           <group name="group_top">
-            <group name="group_left"
-              <field name="name" />
-            </group>
+            <field name="name" />
           </group>
         </sheet>
       </form>
