@@ -11,8 +11,8 @@
                   string="Verify Sign" />
         </header>
         <sheet>
-          <group name="group_top">
-            <field name="keypair_name"/>
+          <group>
+            <field name="name"/>
           </group>
         </sheet>
       </form>
