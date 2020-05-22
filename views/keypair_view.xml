@@ -4,13 +4,27 @@
     <field name="name">Keypair Form</field>
     <field name="model">crypto.block</field>
     <field name="arch" type="xml">
+      <search>
+        <field name="keypair_name"/>
+        <filter name="filter_inactive"
+                string="Inactive"
+                domain="[('active','=',True)]"/>
+        <filter name="filter_active"
+                string="Active"
+                domain="[('active','=',False)]"/>
+      </search>
+
       <form string="Keypair">
         <header>
           <!-- Buttons -->
+          <button name="button_verify_sign" type="object"
+                  string="Verify Sign" />
         </header>
         <sheet>
-          <group>
-            <field name="name" />
+          <group name="group_top">
+            <group name="group_left"
+              <field name="name" />
+            </group>
           </group>
         </sheet>
       </form>
