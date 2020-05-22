@@ -3,7 +3,7 @@
   <record id="view_form_keypair" model="ir.ui.view">
     <field name="name">Keypair Form</field>
     <field name="model">crypto.block</field>
-    <field name="arch" type="xml">        
+    <field name="arch" type="xml">
       <form string="Keypair">
         <header>
           <!-- Buttons -->
@@ -12,7 +12,7 @@
         </header>
         <sheet>
           <group name="group_top">
-            <field name="name" />
+            <field name="keypair_name"/>
           </group>
         </sheet>
       </form>
