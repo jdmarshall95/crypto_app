@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
-<odoo>
-  <record id="view_form_keypair" model="ir.ui.view">
-    <field name="name">Keypair Form</field>
-    <field name="model">crypto.block</field>
-    <field name="arch" type="xml">
-      <form string="Keypair">
-        <header>
-          <!-- Buttons -->
-          <button name="button_verify_sign" type="object"
-                  string="Verify Sign" />
-        </header>
-        <sheet>
+  <odoo>
+    <record id="view_form_book" model="ir.ui.view">
+      <field name="name">Book Form</field>
+      <field name="model">library.book</field>
+      <field name="arch" type="xml">
+        <form string="Book">
           <group>
-            <field name="name"/>
+            <field name="name" />
+            <field name="author_ids" widget="many2many_tags" />
+            <field name="publisher_id" />
+            <field name="date_published" />
+            <field name="isbn" />
+            <field name="active" />
+            <field name="image" widget="image" />
           </group>
-        </sheet>
-      </form>
-    </field>
-  </record>
-</odoo>
+        </form>
+      </field>
+    </record>
+  </odoo>
