@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
-  <odoo>
-    <record id="view_form_keypair" model="ir.ui.view">
-      <field name="name">Keypair Form</field>
-      <field name="model">crypto.block</field>
-      <field name="arch" type="xml">
-        <form string="Keypair">
-          <group>
-            <field name="keypair_name" />
-          </group>
-        </form>
-      </field>
-    </record>
-  </odoo>
+<odoo>
+  <record id="view_form_keypair" model="ir.ui.view">
+    <field name="name">Keypair Form</field>
+    <field name="model">crypto.block</field>
+    <field name="arch" type="xml">
+      <form string="Keypair">
+        <group>
+          <field name="keypair_name" />
+          <field name="active" />
+        </group>
+      </form>
+    </field>
+  </record>
+</odoo>
