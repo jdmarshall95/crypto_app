@@ -13,6 +13,3 @@ class TestBlock(TransactionCase):
     def test_create(self):
         "Test Ketpairs are active by default"
         self.assertEqual(self.block_ode.active, True)
-    def test_check_keypair_name(self):
-        "Check valid Keypair Name"
-        self.assertTrue(self.block_ode._check_keypair_name)
