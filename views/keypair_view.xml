@@ -6,8 +6,8 @@
     <field name="arch" type="xml">
       <form string="Keypair">
         <group>
-          <field name="keypair_name" />
-          <field name="active" />
+          <!field name="keypair_name" />
+          <!field name="active" />
         </group>
       </form>
     </field>
