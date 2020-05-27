@@ -18,4 +18,18 @@
       </form>
     </field>
   </record>
+  <record id="view_search_keypair" model="ir.ui.view">
+    <field name="name">Keypair Filters</field>
+    <field name="model">crypto.block</field>
+    <field name="arch" type="xml">
+      <search>
+        <field name="keypair_name"/>
+        <filter name="filter_inactive"
+                string="Inactive"
+                domain="[('active','=',True)]"/>
+        <filter name="filter_active"
+                string="Active"
+                domain="[('active','=',False)]"/>
+      </search>
+    </field>
 </odoo>
