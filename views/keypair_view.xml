@@ -5,10 +5,16 @@
     <field name="model">crypto.block</field>
     <field name="arch" type="xml">
       <form string="Keypair">
+    <header>
+      <button name="button_sign_file" type="object"
+          string="Sign file"
+    </header>
+    <sheet>
         <group>
           <field name="keypair_name"/>
           <field name="active" />
         </group>
+    </sheet>
       </form>
     </field>
   </record>
