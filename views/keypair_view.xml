@@ -7,7 +7,7 @@
       <form string="Keypair">
     <header>
       <button name="button_sign_file" type="object"
-          string="Sign file"
+          string="Sign file" />
     </header>
     <sheet>
         <group>
